@@ -1,0 +1,22 @@
+# File di ambiente virtuale
+.venv/
+venv/
+
+# File temporanei
+__pycache__/
+*.pyc
+*.pyo
+
+# File di configurazione IDE
+.idea/
+.vscode/
+
+# Database temporanei
+*.sqlite3
+
+# File di log
+*.log
+
+# File di sistema
+.DS_Store
+Thumbs.db
