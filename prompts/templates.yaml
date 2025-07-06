@@ -1,0 +1,28 @@
+# Prompt templates for LLM
+incipit_generation: |
+  Crea un'ambientazione fantasy dettagliata per una campagna DnD.
+  Deve includere:
+    - Nome del mondo
+    - Nome e descrizione della città iniziale
+    - Due luoghi interessanti con brevi descrizioni
+    - Una minaccia attuale o mistero
+
+  Scrivi in tono evocativo e coinvolgente.
+
+npc_generation:
+  template: |
+    You are a D&D NPC generator. Create a fantasy NPC with the following features:
+
+    - They must be located in the zone: "{zone_name}"
+    - The character must have a name, physical appearance, personality, and a fitting occupation
+    - Return a JSON with the following keys: "name", "appearance", "personality", "occupation"
+
+    Example output:
+    {{
+      "name": "Thalgor the Black",
+      "appearance": "a hooded man with glowing red eyes",
+      "personality": "cold, calculating",
+      "occupation": "paid assassin"
+    }}
+
+    Now generate:
